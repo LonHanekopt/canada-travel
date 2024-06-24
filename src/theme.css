@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+    --orange: #ff8e00;
+    --blue: #225fff;
+    --green: #21f166;
+
+    --orange-hover: #ff991a;
+    --blue-hover: #1d54e0;
+    --green-hover: #1fe260;
+
+    --white: #f9f9f9;
+    --black: #1c282e;
+    --text-a: #000;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    border: 0;
+}
+
+span.material-symbols-outlined {
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+a {
+    font-size: 0.85rem;
+    color: var(--text-a);
+    user-select: none;
+    cursor: pointer;
+}
+
+a.active {
+    color: var(--green);
+}
+
+html {
+    font-size: 18px;
+}
+
+.container {
+    max-width: 80vw;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Merriweather", sans-serif;
+    letter-spacing: 1px;
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+input,
+textarea {
+    color: inherit;
+    background-color: #f6f6f6;
+    /* border: 2px solid rgb(63, 54, 32); */
+    /* box-shadow: 2px 2px 5px 0px black; */
+    text-transform: uppercase;
+    line-height: 120%;
+    border-radius: 0.45em;
+    padding: 0.75em;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #fff;
+    border: 1px solid rgb(97, 189, 181);
+}
+
+
+.btn {
+    color: white;
+    background-color: var(--black);
+    border-radius: 0.4rem;
+    letter-spacing: 2px;
+    padding: 0.8rem 2rem 0.9rem 2rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn.green {
+    background-color: var(--text-a);
+}
+
+.btn:hover {
+    background-color: var(--text-a);
+
+}
+
+.btn.green:hover {
+    background-color: var(--green-hover);
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+
+    h1 {
+        letter-spacing: 1px;
+        font-size: 2.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        max-width: 87vw;
+        margin: auto;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        letter-spacing: 1px;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 90vw;
+        margin: auto;
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    h1 {
+        letter-spacing: 1px;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+}
